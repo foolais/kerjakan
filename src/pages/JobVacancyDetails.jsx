@@ -27,7 +27,7 @@ const JobVacancyDetails = () => {
     };
     fetchData();
     console.log(jobDetail);
-  }, [jobId]);
+  }, [jobId, jobDetail]);
 
   return (
     <div>
