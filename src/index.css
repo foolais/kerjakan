@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-value {
+    @apply py-2 px-5 w-full rounded-lg outline-none border-[1px] border-primaryColor;
+  }
+
+  .span-session {
+    @apply font-semibold text-primaryColor;
+  }
+
+  .button-session {
+    @apply w-full bg-primaryColor py-2 my-6 text-white font-semibold hover:bg-blue-900;
+  }
+
+  .dash {
+    @apply w-full py-3 pl-12 text-primaryColor font-bold hover:bg-primaryColor hover:text-white cursor-pointer rounded-r-full;
+  }
+
+  .dash-active {
+    @apply bg-primaryColor text-white rounded-r-full;
+  }
+}
