@@ -12,8 +12,8 @@ const ListJob = () => {
       <Header status="dashboard" />
       <Sidebar active="listJob" />
       <div className="flex">
-        <div className="w-1/5"></div>
-        <div className="w-4/5 p-8">
+        <div className="w-1/4 lg:w-1/5"></div>
+        <div className="w-3/4 lg:w-4/5 p-8">
           <h3 className="text-2xl font-bold text-primaryColor">
             List Job Vacancy
           </h3>

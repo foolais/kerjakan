@@ -16,7 +16,7 @@
   }
 
   .dash {
-    @apply w-full py-3 pl-12 text-primaryColor font-bold hover:bg-primaryColor hover:text-white cursor-pointer rounded-r-full;
+    @apply w-full py-3 pl-12 text-primaryColor font-bold flex items-center justify-center lg:justify-start  gap-2 hover:bg-primaryColor hover:text-white cursor-pointer rounded-r-full;
   }
 
   .dash-active {

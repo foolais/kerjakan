@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Sidebar } from "../components";
+import { Footer, Header, Sidebar } from "../components";
 
 const Profile = () => {
   return (
@@ -7,8 +7,8 @@ const Profile = () => {
       <Header status="dashboard" />
       <Sidebar active="profile" />
       <div className="flex">
-        <div className="w-1/5"></div>
-        <div className="w-4/5 p-8">
+        <div className="w-1/4 lg:w-1/5"></div>
+        <div className="w-3/4 lg:w-4/5 p-8">
           <h3 className="text-2xl font-bold text-primaryColor">Profile</h3>
           <div className="w-11/12 flex flex-col gap-8 items-center justify-center my-8">
             <div className="w-[200px] h-[200px] bg-primaryColor rounded-full"></div>
@@ -22,6 +22,9 @@ const Profile = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-0 w-full">
+        <Footer />
       </div>
     </div>
   );

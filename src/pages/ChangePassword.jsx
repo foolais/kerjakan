@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Sidebar } from "../components";
+import { Footer, Header, Sidebar } from "../components";
 import { UserGlobal } from "../context/GlobalContext";
 
 const ChangePassword = () => {
@@ -10,8 +10,8 @@ const ChangePassword = () => {
       <Header status="dashboard" />
       <Sidebar active="changePassword" />
       <div className="flex">
-        <div className="w-1/5"></div>
-        <div className="w-4/5 p-8">
+        <div className="w-1/4 lg:w-1/5"></div>
+        <div className="w-3/4 lg:w-4/5 p-8">
           <h3 className="text-2xl font-bold text-primaryColor">
             Change Password
           </h3>
@@ -51,6 +51,9 @@ const ChangePassword = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-0 w-full">
+        <Footer />
       </div>
     </div>
   );

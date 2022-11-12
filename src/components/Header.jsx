@@ -6,10 +6,10 @@ import Title from "./Title";
 
 const Header = ({ status }) => {
   const navigate = useNavigate();
-  const { handleLogout, data } = UserGlobal();
+  const { handleLogout } = UserGlobal();
   return (
     <div className="flex items-center justify-between w-4/5 mx-auto py-3">
-      <div className="text-2xl" onClick={() => navigate("/")}>
+      <div className="lg:text-xl xl:text-2xl" onClick={() => navigate("/")}>
         <Title />
       </div>
       <div className="flex">

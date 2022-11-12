@@ -9,8 +9,8 @@ const DataForm = () => {
       <Header status="dashboard" />
       <Sidebar active="dataForm" />
       <div className="flex pb-8">
-        <div className="w-1/5"></div>
-        <div className="w-4/5 p-8">
+        <div className="w-1/4 lg:w-1/5"></div>
+        <div className="w-3/4 lg:w-4/5 p-8">
           <h3 className="text-2xl font-bold text-primaryColor">Data Form</h3>
           <p className="mt-2 mb-6 font-semibold text-gray-500">
             - Create Data Job Vacancy

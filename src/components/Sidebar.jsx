@@ -1,15 +1,22 @@
 import React from "react";
+import {
+  FaBriefcase,
+  FaHome,
+  FaKey,
+  FaRegUser,
+  FaWpforms,
+} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Title from "./Title";
 
 const Sidebar = ({ active }) => {
   const navigate = useNavigate();
   return (
-    <div className="w-1/5 shadow-2xl absolute top-0 min-h-full z-20">
+    <div className="w-1/4 lg:w-1/5 shadow-2xl absolute top-0 min-h-full z-20">
       <div className="py-4">
         <div
           onClick={() => navigate("/")}
-          className="text-4xl text-center bg-white w-full mx-auto px-3 py-1 rounded-md"
+          className="text-xl lg:text-4xl text-center bg-white w-full mx-auto px-3 py-1 rounded-md"
         >
           <Title />
         </div>
@@ -19,7 +26,8 @@ const Sidebar = ({ active }) => {
             onClick={() => navigate("/dashboard")}
             className={`dash ${active === "dashboard" ? "dash-active" : null}`}
           >
-            Dashboard
+            <FaHome className="text-4xl lg:text-xl" />
+            <span className="hidden lg:block">Dashboard</span>
           </div>
           <div
             onClick={() => navigate("/dashboard/list-job-vacancy")}
@@ -27,13 +35,15 @@ const Sidebar = ({ active }) => {
               active === "listJob" ? "dash-active" : null
             }`}
           >
-            List Job
+            <FaBriefcase className="text-4xl lg:text-xl" />
+            <span className="hidden lg:block">List Job</span>
           </div>
           <div
             onClick={() => navigate("/dashboard/list-job-vacancy/create")}
             className={`dash ${active === "dataForm" ? "dash-active" : null}`}
           >
-            Data Form
+            <FaWpforms className="text-4xl lg:text-xl" />
+            <span className="hidden lg:block">Data Form</span>
           </div>
           <div
             onClick={() => navigate("/dashboard/profile")}
@@ -41,7 +51,8 @@ const Sidebar = ({ active }) => {
               active === "profile" ? "dash-active" : null
             }`}
           >
-            Profile
+            <FaRegUser className="text-4xl lg:text-xl" />
+            <span className="hidden lg:block">Profile</span>
           </div>
           <div
             onClick={() => navigate("/dashboard/change-password")}
@@ -49,7 +60,8 @@ const Sidebar = ({ active }) => {
               active === "changePassword" ? "dash-active" : null
             }`}
           >
-            Change Password
+            <FaKey className="text-4xl lg:text-xl" />
+            <span className="hidden lg:block">Change Password</span>
           </div>
         </div>
       </div>
